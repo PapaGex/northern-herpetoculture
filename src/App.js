@@ -9,7 +9,7 @@ import LeachiePage from './pages/LeachiePage/leachiepage.component';
 import EuroPage from './pages/EuroPage/europage.component';
 import GeckoPage from './pages/GeckoPage/geckopage.component';
 import SupplyPage from "./pages/SupplyPage/supplypage.component";
-
+import ShopPage from './pages/browse/shop.component';
 
 function App() {
     return (
@@ -21,6 +21,7 @@ function App() {
                 <Route path ='/eurodactylodes' component={EuroPage} />
                 <Route path ='/gecko' component={GeckoPage} />
                 <Route path ='/supply' component={SupplyPage} />
+                <Route path ='/shop' component={ShopPage} />
                 </Switch>
         </div>
     );
