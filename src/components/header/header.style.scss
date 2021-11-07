@@ -1,5 +1,5 @@
 .header {
-  height: 70px;
+  height: 100px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -12,14 +12,18 @@
   }
 
   .options {
-    width: 50%;
+    width: 75%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 
     .option {
-      padding: 10px 15px;
+      padding: 10px 15px 15px;
+    }
+
+    .optionTwo {
+      justify-content: flex-end;
     }
   }
 }
