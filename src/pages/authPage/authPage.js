@@ -1,13 +1,21 @@
 import React from 'react';
 
-import './authentificationPage.styles.scss';
-import SignIn from '../../components/sign-in/sign-in.component';
 
-const AuthenticationPage = () => (
-    <div className='authentication'><SignIn /></div>
+import SignIn from '../../components/sign-in/sign-in.component';
+import SignUp from '../../components/sign-up/sign-up.component';
+
+import './authPage.styles.scss';
+
+const AuthPage = () => (
+    <>
+        <div className='authentication'>
+            <SignIn />
+            <SignUp />
+        </div>
+    </>
 );
 
-export default AuthenticationPage;
+export default AuthPage;
 
 
 //firebase.auth().onAuthStateChanged(function(user) {

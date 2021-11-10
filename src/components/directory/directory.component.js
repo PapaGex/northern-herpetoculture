@@ -17,19 +17,19 @@ class Directory extends React.Component {
             },
                 {
                     title: 'Eurodactylodes',
-                    imageUrl: 'public/images/euroV.jpg',
+                    imageUrl: 'https://pm1.narvii.com/7608/54873b53620b81688addc31a2f5ec024c45a8811r1-1920-1278v2_hq.jpg',
                     id: 2,
-                    linkUrl: ''
+                    linkUrl: 'agricolae'
                 },
                 {
                     title: 'Leachianus',
-                    imageUrl: '',
+                    imageUrl: 'https://www.lillyexotics.co.uk/sitecontrol/reptile_img/lilly19148DSC_1525.jpg',
                     id: 3,
                     linkUrl: ''
                 },
                 {
                     title: 'Other Geckos',
-                    imageUrl: './public/images/pady.jpg',
+                    imageUrl: 'https://www.backwaterreptiles.com/images/geckos/leaf-tailed-gecko-for-sale.jpg',
                     size: 'large',
                     id: 4,
                     linkUrl: ''
@@ -39,7 +39,7 @@ class Directory extends React.Component {
                     imageUrl: '',
                     size: 'large',
                     id: 5,
-                    linkUrl: ''
+                    linkUrl: 'https://b3h2.scene7.com/is/image/BedBathandBeyond/73559045597909p?$690$&wid=690&hei=690'
                 }]
         }
     }
