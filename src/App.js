@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import './App.css';
@@ -46,23 +46,33 @@ class App extends React.Component {
     render() {
         return (
             <>
-            <div>
-                <Header />
-                <Switch>
-                    <Route exact path='/' component={HomePage}/>
-                    <Route path='/chahuoa' component={ChewiePage}/>
-                    <Route path='/leachieanus' component={LeachiePage}/>
-                    <Route path='/eurodactylodes' component={EuroPage}/>
-                    <Route path='/gecko' component={GeckoPage}/>
-                    <Route path='/supply' component={SupplyPage}/>
-                    <Route path='/shop' component={ShopPage}/>
-                    <Route path='/authent' component={AuthPage}/>
-                </Switch>
-            </div>
+                <div>
+                    <Header />
+                    <Switch>
+                        <Route exact path='/' component={HomePage}/>
+                        <Route path='/chahuoa' component={ChewiePage}/>
+                        <Route path='/leachieanus' component={LeachiePage}/>
+                        <Route path='/eurodactylodes' component={EuroPage}/>
+                        <Route path='/gecko' component={GeckoPage}/>
+                        <Route path='/supply' component={SupplyPage}/>
+                        <Route path='/shop' component={ShopPage}/>
+                        <Route exact path='/authent' render={() => this.props.currentUser ? (
+                            <Redirect to='/' />
+                        ) : (
+                            <AuthPage />
+                        )
+                    }
+                        />
+                    </Switch>
+                </div>
             </>
         );
     }
 }
+
+const mapStateToProps = ({ user }) => ({
+    currentUser: user.currentUser
+});
 
 const mapDispatchToProps = dispatch => ({
     setCurrentUser: user => dispatch(setCurrentUser(user))
