@@ -21,7 +21,7 @@ const SHOP_DATA = [
     {
         id: 3,
         name: 'PI high patterned',
-        imageUrl: '',
+        imageUrl: 'https://www.reptilis.com/774-large_default/mniarogekko-rhachodactylus-chahuoa-mainland-jpg',
         price: 1050
     },
     {
@@ -40,19 +40,19 @@ const SHOP_DATA = [
     {
         id: 1,
         name: 'viellerdi baby',
-        imageUrl: '',
+        imageUrl: '/home/kawekaweau/Desktop/WebSite/northern-herpetoculture/src/assets/photos/eurodactV.jpg',
         price: 200
     },
     {
         id: 2,
         name: 'symmetricus',
-        imageUrl: '',
+        imageUrl: '/home/kawekaweau/Desktop/WebSite/northern-herpetoculture/src/assets/photos/eurodactV.jpg',
         price: 450
     },
     {
         id: 3,
         name: 'occidentilis',
-        imageUrl: '',
+        imageUrl: 'https://pm1.narvii.com/7608/54873b53620b81688addc31a2f5ec024c45a8811r1-1920-1278v2_hq.jpg',
         price: 350
     },
     {
@@ -89,7 +89,7 @@ const SHOP_DATA = [
     {
         id: 4,
         name: 'nuu ana',
-        imageUrl: '',
+        imageUrl: 'https://www.lillyexotics.co.uk/sitecontrol/reptile_img/lilly19148DSC_1525.jpg,',
         price: 750
     }
 ]

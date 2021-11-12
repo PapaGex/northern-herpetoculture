@@ -5,7 +5,7 @@ import { auth } from '../../firebase/firebase.utils';
 import CartIcon from '../cart-icon/cart-icon.component';
 import CartDropdown from '../cart-dropdown/cart-dropdown.component';
 
-import { ReactComponent as Logo } from "../../assets/dexagex.svg";
+import { ReactComponent as Logo } from "../../assets/logoPady.svg";
 
 import './header.style.scss';
 
